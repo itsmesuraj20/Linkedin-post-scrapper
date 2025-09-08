@@ -17,7 +17,8 @@ router.post('/linkedin-post', async (req, res) => {
         res.json(post);
     }
     catch (err) {
-        res.status(500).json({ error: 'Scraping failed', details: err });
+        console.error('LinkedIn scraping error:', err);
+        res.status(500).json({ error: 'Scraping failed', details: err?.message || err });
     }
 });
 export default router;

@@ -12,6 +12,8 @@ export declare function scrapeLinkedInPost(postUrl: string): Promise<{
         likes: number;
         comments: number;
         shares: number;
+        views: number;
     };
+    images: string[];
 }>;
 //# sourceMappingURL=linkedin.d.ts.map

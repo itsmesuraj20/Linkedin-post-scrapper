@@ -14,7 +14,9 @@ const Scrap: React.FC = () => {
     setError('');
     setResult(null);
     try {
-      const res = await api.post('/scrape/linkedin-post', { postUrl: url });
+      // Use a demo userId or get from auth context/localStorage if available
+      const userId = localStorage.getItem('userId') || 'demo';
+      const res = await api.post('/scrape/linkedin-post', { postUrl: url, userId });
       setResult(res.data);
     } catch (err: any) {
       setError(err.response?.data?.error || 'Scraping failed');
