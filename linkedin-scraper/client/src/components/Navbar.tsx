@@ -29,6 +29,12 @@ const Navbar: React.FC = () => {
                 Dashboard
               </Link>
               <Link
+                to="/scrap"
+                className="text-white hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              >
+                Scrap
+              </Link>
+              <Link
                 to="/scraper"
                 className="text-white hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors"
               >
