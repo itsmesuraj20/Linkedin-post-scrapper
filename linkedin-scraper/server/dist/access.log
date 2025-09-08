@@ -1,0 +1,5 @@
+::1 - - [08/Sep/2025:16:36:27 +0000] "GET /api/health HTTP/1.1" 200 15 "-" "axios/1.11.0"
+::1 - - [08/Sep/2025:16:36:27 +0000] "POST /api/auth/login HTTP/1.1" 200 271 "-" "axios/1.11.0"
+::1 - - [08/Sep/2025:16:38:02 +0000] "GET /api/health HTTP/1.1" 200 15 "-" "curl/8.7.1"
+::1 - - [08/Sep/2025:16:39:04 +0000] "GET /api/health HTTP/1.1" 200 15 "-" "curl/8.7.1"
+::1 - - [08/Sep/2025:16:40:15 +0000] "POST /api/auth/login HTTP/1.1" 200 271 "-" "curl/8.7.1"

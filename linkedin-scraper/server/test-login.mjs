@@ -2,9 +2,13 @@ import axios from 'axios';
 
 async function testLogin() {
   try {
+    console.log('Testing health endpoint...');
+    const healthResponse = await axios.get('http://localhost:9999/api/health');
+    console.log('✅ Health check:', healthResponse.data);
+    
     console.log('Testing login with test user...');
     
-    const response = await axios.post('http://localhost:3001/api/auth/login', {
+    const response = await axios.post('http://localhost:9999/api/auth/login', {
       email: 'test@gmail.com',
       password: 'test123'
     }, {

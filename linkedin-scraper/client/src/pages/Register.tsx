@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import { motion } from 'framer-motion';
+import api from '../utils/api';
 
 const Register: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -13,7 +13,7 @@ const Register: React.FC = () => {
     setLoading(true);
     setError('');
     try {
-      await axios.post('/api/auth/register', { email, username, password });
+      await api.post('/auth/register', { email, username, password });
       window.location.href = '/login';
     } catch (err: any) {
       setError(err.response?.data?.error || 'Registration failed');
