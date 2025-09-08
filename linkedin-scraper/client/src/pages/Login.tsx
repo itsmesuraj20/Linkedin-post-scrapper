@@ -23,19 +23,19 @@ const Login: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-background text-white">
-      <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="bg-secondary p-8 rounded-lg shadow-lg w-full max-w-md">
-        <h2 className="text-2xl font-bold mb-6 text-primary">Login</h2>
-        <input type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Email" className="w-full p-3 mb-4 rounded bg-background text-white" />
-        <input type="password" value={password} onChange={e => setPassword(e.target.value)} placeholder="Password" className="w-full p-3 mb-4 rounded bg-background text-white" />
-        <motion.button whileHover={{ scale: 1.05 }} onClick={handleLogin} disabled={loading || !email || !password} className="w-full px-6 py-3 rounded-lg bg-primary text-white font-semibold shadow-lg transition-all duration-300 hover:bg-primary-light disabled:opacity-50">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-[#0f2027] via-[#2c5364] to-[#1c1c1c] text-white">
+      <motion.div initial={{ opacity: 0, scale: 0.97 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7 }} className="bg-white/10 backdrop-blur-lg border border-white/20 p-10 rounded-3xl shadow-2xl w-full max-w-md flex flex-col items-center">
+        <h2 className="text-4xl font-extrabold font-poppins text-transparent bg-clip-text bg-gradient-to-r from-[#43cea2] to-[#185a9d] mb-8 drop-shadow-lg">Login</h2>
+        <motion.input type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Email" className="w-full p-4 mb-4 rounded-xl bg-white/10 border border-white/20 text-white shadow-xl focus:outline-none focus:ring-2 focus:ring-accent transition-all" whileFocus={{ scale: 1.03 }} />
+        <motion.input type="password" value={password} onChange={e => setPassword(e.target.value)} placeholder="Password" className="w-full p-4 mb-4 rounded-xl bg-white/10 border border-white/20 text-white shadow-xl focus:outline-none focus:ring-2 focus:ring-accent transition-all" whileFocus={{ scale: 1.03 }} />
+        <motion.button whileHover={{ scale: 1.08, rotateY: 8 }} onClick={handleLogin} disabled={loading || !email || !password} className="w-full px-8 py-4 rounded-xl bg-gradient-to-r from-[#43cea2] to-[#185a9d] text-white font-bold shadow-xl transition-all duration-500 hover:scale-105 hover:shadow-3xl text-xl disabled:opacity-50">
           {loading ? 'Logging in...' : 'Login'}
         </motion.button>
-        {error && <p className="text-red-500 mt-4">{error}</p>}
-        <div className="mt-6 text-center">
-          <p className="text-secondary">
+        {error && <p className="text-red-500 mt-6">{error}</p>}
+        <div className="mt-8 text-center">
+          <p className="text-gray-300">
             Don't have an account?{' '}
-            <a href="/register" className="text-primary hover:text-primary-light transition-colors">
+            <a href="/register" className="text-[#43cea2] hover:text-[#185a9d] transition-colors font-bold">
               Register here
             </a>
           </p>
