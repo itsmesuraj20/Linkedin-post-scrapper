@@ -4,9 +4,9 @@ async function testLogin() {
   try {
     console.log('Testing login with test user...');
     
-    const response = await axios.post('http://localhost:5000/api/auth/login', {
-      email: 'test@test@gmail.com',
-      password: 'test@123'
+    const response = await axios.post('http://localhost:3001/api/auth/login', {
+      email: 'test@gmail.com',
+      password: 'test123'
     }, {
       headers: {
         'Content-Type': 'application/json'
