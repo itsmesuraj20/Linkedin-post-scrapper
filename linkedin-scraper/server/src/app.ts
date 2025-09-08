@@ -26,6 +26,7 @@ import bulkScrapeRoutes from './routes/bulkScrape.js';
 import scheduleScrapeRoutes from './routes/scheduleScrape.js';
 import analyticsRoutes from './routes/analytics.js';
 import exportRoutes from './routes/export.js';
+import adminRoutes from './routes/admin.js';
 
 app.use('/api/auth', authRoutes);
 app.use('/api/posts', postRoutes);
@@ -34,6 +35,7 @@ app.use('/api/scrape', bulkScrapeRoutes);
 app.use('/api/schedule', scheduleScrapeRoutes);
 app.use('/api/analytics', analyticsRoutes);
 app.use('/api/export', exportRoutes);
+app.use('/api/admin', adminRoutes);
 
 import monitoringRoutes from './monitoring.js';
 app.use('/api/monitor', monitoringRoutes);

@@ -1,0 +1,10 @@
+
+> server@1.0.0 dev
+> npm run build && node dist/index.js
+
+
+> server@1.0.0 build
+> tsc
+
+[dotenv@17.2.2] injecting env (3) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+Server running on port 5000
