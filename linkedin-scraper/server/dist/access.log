@@ -3,3 +3,7 @@
 ::1 - - [08/Sep/2025:16:38:02 +0000] "GET /api/health HTTP/1.1" 200 15 "-" "curl/8.7.1"
 ::1 - - [08/Sep/2025:16:39:04 +0000] "GET /api/health HTTP/1.1" 200 15 "-" "curl/8.7.1"
 ::1 - - [08/Sep/2025:16:40:15 +0000] "POST /api/auth/login HTTP/1.1" 200 271 "-" "curl/8.7.1"
+::1 - - [08/Sep/2025:16:47:56 +0000] "POST /api/auth/login HTTP/1.1" 200 271 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+::1 - - [08/Sep/2025:16:53:22 +0000] "GET /api/health HTTP/1.1" 200 15 "-" "curl/8.7.1"
+::1 - - [08/Sep/2025:17:28:48 +0000] "POST /api/scrape/linkedin-post HTTP/1.1" 500 93 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+::1 - - [08/Sep/2025:17:32:09 +0000] "POST /api/scrape/linkedin-post HTTP/1.1" 500 93 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"

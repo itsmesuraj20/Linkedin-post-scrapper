@@ -33,6 +33,14 @@ const Register: React.FC = () => {
           {loading ? 'Registering...' : 'Register'}
         </motion.button>
         {error && <p className="text-red-500 mt-4">{error}</p>}
+        <div className="mt-6 text-center">
+          <p className="text-secondary">
+            Already have an account?{' '}
+            <a href="/login" className="text-primary hover:text-primary-light transition-colors">
+              Login here
+            </a>
+          </p>
+        </div>
       </motion.div>
     </div>
   );
